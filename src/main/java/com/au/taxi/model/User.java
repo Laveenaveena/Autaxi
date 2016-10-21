@@ -18,6 +18,8 @@ public class User {
 	private String email;
 	@Column(length=10)
 	private String phoneNumber;
+	@Column(length=20)
+	private String password;
 	
 	public String getUserId() {
 		return userId;
@@ -49,6 +51,10 @@ public class User {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-	
-
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 }
